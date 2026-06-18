@@ -1,0 +1,56 @@
+Bode analysis -- rectangular-window FFT ratio  H(f) = FFT(v) / FFT(d)
+FS_ADC=80000 Hz   input_snr_threshold=20.0 dB
+Phase is UNWRAPPED (no +/-180 jumps).
+
+  label                                               f_Hz   gain_dB   phase_deg
+  --------------------------------------------------------------------------------
+
+  vin_17_06_r_7_51_nom_30
+  f=   50 Hz  gain=   +38.4 dB  phase= -4869.9 deg
+  f=  100 Hz  gain=   +30.9 dB  phase= -5192.8 deg
+  f=  150 Hz  gain=   +26.5 dB  phase= -6836.2 deg
+  f=  200 Hz  gain=   +16.4 dB  phase= -7648.7 deg
+  f=  500 Hz  gain=   +27.1 dB  phase=-13111.6 deg
+  f= 1000 Hz  gain=   +19.8 dB  phase=-32065.6 deg
+  f= 2000 Hz  gain=    +9.8 dB  phase=-141911.4 deg
+  f= 5000 Hz  gain=    +6.7 dB  phase=-50110.0 deg
+
+  vin_17_06_r_7_51_nom_50
+  f=   50 Hz  gain=   +42.5 dB  phase=  -180.8 deg
+  f=  100 Hz  gain=   +34.1 dB  phase=  -153.0 deg
+  f=  150 Hz  gain=   +27.7 dB  phase=  -696.0 deg
+  f=  200 Hz  gain=   +20.8 dB  phase= -1102.1 deg
+  f=  500 Hz  gain=   +26.9 dB  phase= -5896.8 deg
+  f= 1000 Hz  gain=   +16.2 dB  phase=-16974.8 deg
+  f= 2000 Hz  gain=   +16.7 dB  phase=-102178.7 deg
+  f= 5000 Hz  gain=   +12.2 dB  phase=-75040.6 deg
+
+  vin_17_06_r_7_51_nom_70
+  f=   50 Hz  gain=   +46.8 dB  phase=  -188.6 deg
+  f=  100 Hz  gain=   +36.8 dB  phase=  -164.6 deg
+  f=  150 Hz  gain=   +30.8 dB  phase=    25.6 deg
+  f=  200 Hz  gain=   +26.1 dB  phase=   356.1 deg
+  f=  500 Hz  gain=   +25.7 dB  phase=  5267.2 deg
+  f= 1000 Hz  gain=   +12.8 dB  phase=  6142.7 deg
+  f= 2000 Hz  gain=   +22.8 dB  phase=-52520.7 deg
+  f= 5000 Hz  gain=   +14.0 dB  phase=  3225.4 deg
+
+  vin_17_09_r_16_27_nom_30
+  f=   50 Hz  gain=   +36.5 dB  phase= -9219.5 deg
+  f=  100 Hz  gain=   +30.5 dB  phase=-12734.6 deg
+  f=  150 Hz  gain=   +26.4 dB  phase=-15838.7 deg
+  f=  200 Hz  gain=   +18.8 dB  phase=-18039.7 deg
+  f=  500 Hz  gain=   +27.5 dB  phase=-32532.3 deg
+  f= 1000 Hz  gain=   +25.3 dB  phase=-69464.4 deg
+  f= 2000 Hz  gain=   +19.3 dB  phase=-248866.9 deg
+  f= 5000 Hz  gain=    +5.7 dB  phase=-249890.1 deg
+
+  vin_20_0_r_16_27_nom_50
+  f=   50 Hz  gain=   +32.6 dB  phase= -6727.5 deg
+  f=  100 Hz  gain=   +28.1 dB  phase=-13453.6 deg
+  f=  150 Hz  gain=   +23.2 dB  phase=-16566.2 deg
+  f=  200 Hz  gain=   +24.9 dB  phase=-18819.2 deg
+  f=  500 Hz  gain=   +31.9 dB  phase=-32190.4 deg
+  f= 1000 Hz  gain=   +22.6 dB  phase=-73428.3 deg
+  f= 2000 Hz  gain=   +20.9 dB  phase=-244763.8 deg
+  f= 5000 Hz  gain=    +3.9 dB  phase=-255951.7 deg

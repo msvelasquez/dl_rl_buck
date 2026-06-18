@@ -1,0 +1,15 @@
+Regime-stratified evaluation of within-envelope plant model
+
+settle_steps=20  small_step<=0.05
+
+Condition            all  settled   trans   small  %settled  n_small
+25.1V_7.2R          1163     1098    1432     223       83%       13
+17.11V_7.2R          397      350     567     218       83%       13
+20.13V_8.7R         1084     1056    1207     264       83%       13
+20.13V_13.0R        1297     1281    1373     307       83%       13
+25.1V_8.7R           567      454     930     208       83%       13
+30.16V_13.0R         897      806    1241     245       83%       13
+
+AVERAGE settled               841 mV
+AVERAGE small-step            244 mV
+AVERAGE transition           1125 mV

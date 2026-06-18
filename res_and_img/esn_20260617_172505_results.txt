@@ -1,0 +1,48 @@
+ESN plant model v4  --  multi-timescale + warm-start validation
+Timestamp: 20260617_172505
+
+hs_rate         = 4  (20000 Hz)
+steps_per_ctrl  = 10
+n_fast          = 250  alpha=0.4 SR=0.97
+n_slow          = 250  alpha=0.1 SR=0.997
+ridge           = 0.001
+washout         = 500
+op_window       = 500 steps (25 ms)
+warm_start_val  = True
+
+normalisation: vmu=7.974, vsd=4.160, omu=17.95, osd=5.22
+
+Validation rollout RMSE per file:
+  buck_capture_17.11V_7.2R.npz                                486.5 mV
+  buck_capture_20.13V_13.0R.npz                              1122.3 mV
+  buck_capture_20.13V_8.7R.npz                               1037.3 mV
+  buck_capture_25.1V_7.2R.npz                                2572.3 mV
+  buck_capture_25.1V_8.7R.npz                                2375.9 mV
+  buck_capture_30.16V_13.0R.npz                               806.5 mV
+  chirp_vin_17_06_r_7_51_nom_30.npz                           117.5 mV
+  chirp_vin_17_06_r_7_51_nom_50.npz                           508.3 mV
+  chirp_vin_17_06_r_7_51_nom_70.npz                          8121.8 mV
+  chirp_vin_17_09_r_16_27_nom_30.npz                          231.7 mV
+  chirp_vin_20_0_r_16_27_nom_50.npz                           328.9 mV
+  sequence_repeat_trial_1_3_vin_20_0_r_16_27.npz             1116.6 mV
+  sequence_repeat_trial_2_3_vin_20_0_r_16_27.npz             1116.9 mV
+  sequence_repeat_trial_3_3_vin_20_0_r_16_27.npz             1117.5 mV
+  sequence_seq_vin_11_r_16_27.npz                            2407.0 mV
+  sequence_seq_vin_13_r_16_27.npz                            1683.3 mV
+  sequence_seq_vin_15_r_16_27.npz                             855.1 mV
+  sequence_seq_vin_21_r_16_27.npz                            1448.4 mV
+  sequence_seq_vin_23_r_16_27.npz                            2662.4 mV
+  sequence_seq_vin_25_r_16_27.npz                            2222.8 mV
+  sequence_seq_vin_27_r_16_27.npz                            1718.8 mV
+  sequence_seq_vin_29_r_16_27.npz                            1075.8 mV
+  sequence_seq_vin_31_r_16_27.npz                             469.9 mV
+  sequence_seq_vin_9_r_16_27.npz                             3074.8 mV
+  sequence_trial_repeat_1_5_vin_17_8_r_7_51.npz               468.7 mV
+  sequence_trial_repeat_2_5_vin_17_08_r_7_51.npz              465.1 mV
+  sequence_trial_repeat_3_5_vin_17_08_r_7_51.npz              464.5 mV
+  sequence_trial_repeat_4_5_vin_17_08_r_7_51.npz              464.2 mV
+  sequence_trial_repeat_5_5_vin_17_08_r_7_51.npz              467.7 mV
+
+Mean: 1414.1 mV    Median: 1075.8 mV
+
+Model saved to: esn_20260617_172505_model.npz

@@ -1,0 +1,12 @@
+Within-envelope held-out-segment validation
+
+seq_len=50  lstm=64  holdout=20%  segments/file=4
+
+Condition                   Held-out RMSE (mV)
+25.1V_7.2R                              1107.9
+17.11V_7.2R                              395.4
+20.13V_8.7R                             1074.7
+20.13V_13.0R                            1288.2
+25.1V_8.7R                               557.9
+30.16V_13.0R                             888.3
+AVERAGE                                  885.4

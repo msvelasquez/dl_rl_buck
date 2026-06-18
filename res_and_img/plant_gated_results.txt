@@ -1,0 +1,11 @@
+Gated plant results
+
+seq_len=40 op_window=40
+
+arch         mono  stable  ctrl_mV  result
+narx_mlp     True    True       28    PASS
+lstm1        True    True       40    PASS
+gru1         True    True       66    PASS
+
+BEST PASSING: narx_mlp
+Exported plant_best_weights.npz + plant_best_meta.npz

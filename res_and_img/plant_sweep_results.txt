@@ -1,0 +1,12 @@
+Plant architecture sweep -- within-envelope held-out RMSE
+
+seq_len=40
+
+arch            avg_mV    params
+lstm1           1898.6     19265
+lstm2           1953.9     52289
+lstm3           2100.0     85313
+gru1            1421.8     15169
+narx_mlp        3121.0     20737
+
+best: gru1

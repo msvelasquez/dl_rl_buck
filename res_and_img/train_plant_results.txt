@@ -1,0 +1,10 @@
+Plant training results (held-out-segment rollout RMSE)
+
+seq_len=93 op_window=40 files=24
+
+arch          avg_mV    params
+narx_mlp       490.0     46209
+lstm1          540.6     19521
+gru1           230.9     15361
+
+best: gru1

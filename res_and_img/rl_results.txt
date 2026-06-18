@@ -1,0 +1,30 @@
+Closed-loop RL (deployment-faithful) -- steady-state error
+
+ACTION_DELAY=1 N_OBS_SAMPLES=20 RIPPLE_COEF=0.17
+PID target: 100 mV
+
+--- mlp_16x16: avg 914.0 mV ---
+   Vin=25.1   R=7.2  : 1022.5 +- 836.0 mV
+   Vin=17.11  R=7.2  :  595.5 +- 120.2 mV
+   Vin=20.13  R=8.7  :  773.2 +- 365.0 mV
+   Vin=20.13  R=13.0 : 1155.3 +- 993.6 mV
+   Vin=25.1   R=8.7  :  608.7 +- 47.3 mV
+   Vin=30.16  R=13.0 : 1328.5 +- 1202.2 mV
+
+--- mlp_32x32: avg 819.1 mV ---
+   Vin=25.1   R=7.2  :  475.8 +- 161.2 mV
+   Vin=17.11  R=7.2  :  484.0 +- 185.5 mV
+   Vin=20.13  R=8.7  : 1052.9 +- 1078.3 mV
+   Vin=20.13  R=13.0 :  441.5 +- 175.9 mV
+   Vin=25.1   R=8.7  :  538.0 +- 144.0 mV
+   Vin=30.16  R=13.0 : 1922.7 +- 1553.5 mV
+
+--- mlp_64x64: avg 833.5 mV ---
+   Vin=25.1   R=7.2  :  628.0 +- 348.6 mV
+   Vin=17.11  R=7.2  :  548.2 +- 98.1 mV
+   Vin=20.13  R=8.7  : 1314.8 +- 1250.6 mV
+   Vin=20.13  R=13.0 :  508.8 +- 214.4 mV
+   Vin=25.1   R=8.7  :  930.5 +- 439.2 mV
+   Vin=30.16  R=13.0 : 1070.8 +- 434.2 mV
+
+BEST: mlp_32x32 (819.1 mV) -> above target -- inspect transients / tune

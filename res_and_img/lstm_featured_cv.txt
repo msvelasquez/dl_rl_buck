@@ -1,0 +1,11 @@
+Physics-featured LSTM -- LOO CV results
+
+seq_len=50  lstm_units=64  dense=32  dropout=0.1
+
+Condition                    In-sample          LOO        Gap
+25.1V_7.2R                       204.2       1722.5     1518.4
+17.11V_7.2R                       83.1       3672.2     3589.1
+20.13V_8.7R                      101.7       4269.8     4168.1
+20.13V_13.0R                     131.5       2982.1     2850.6
+25.1V_8.7R                       135.4       2765.7     2630.4
+30.16V_13.0R                     179.4       2640.7     2461.3
