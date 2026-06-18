@@ -6,13 +6,6 @@ El objetivo principal era reemplazar un controlador PID que exhibía una oscilac
 
 ## Estructura del Repositorio
 
-
-```
-
-```text
-File generated successfully.
-
-
 ```
 
 dl_rl_buck/
@@ -181,5 +174,3 @@ El entrenamiento de RL en lazo cerrado no alcanzó el objetivo de regulación de
 ## Notas
 
 * Los datos de fase producidos por `bode_analysis.py` en las capturas del hardware real no son fiables debido a la acumulación de fase dominada por el ruido por debajo de la banda del chirp. Los datos de ganancia sí son utilizables.
-* El modelo ESN requiere un período de calentamiento (warm-up) de aproximadamente 835 ms (cinco constantes de tiempo de las neuronas lentas) para ofrecer predicciones fiables. Su uso sin este calentamiento produce salidas incorrectas con ciclos de trabajo bajos.
-* Las condiciones de operación probablemente en DCM (Vin por debajo de 15 V o por encima de 20 V con R = 16.27 ohmios) presentaron un RMSE superior a 1700 mV y fueron excluidas de las condiciones de entrenamiento de RL.
